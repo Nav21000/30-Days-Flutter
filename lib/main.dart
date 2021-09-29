@@ -1,4 +1,6 @@
+import 'package:eighthours/home_page.dart';
 import 'package:flutter/material.dart';
+import 'home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -6,17 +8,10 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: const Text('Welcome to Flutter World'),
-          ),
-        ),
-      ),
+    return  MaterialApp(
+      home: HomePage(),
     );
   }
 }
