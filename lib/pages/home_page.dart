@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({ Key? key }) : super(key: key);
-  final String name ="Navneet";
+  const HomePage({Key? key}) : super(key: key);
+  final String name = "Navneet";
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text('Catalog App'),
       ),
       body: Center(
-          child: Container(
-            child: Text('Welcome to Flutter World $name'),
-          ),
+        child: Container(
+          child: Text('Welcome to Flutter World $name'),
         ),
-      );
+      ),
+      drawer: Drawer(),
+    );
   }
 }
